@@ -99,6 +99,25 @@ nav {
   flex-shrink: 0;
 }
 
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-1);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
 /* ─── BUTTONS ───────────────────────────────────────────── */
 
 .btn {
@@ -963,13 +982,30 @@ footer {
 
 @media (max-width: 720px) {
   nav { padding: 0 1.5rem; }
-  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 99;
+  }
+  nav.nav-open .nav-links { display: flex; }
+  .nav-actions { display: none; }
+  nav.nav-open .nav-actions { display: flex; }
   section { padding: 4rem 1.5rem; }
   .hero { padding: 4rem 1.5rem; }
   .stats-bar { padding: 1.5rem; }
-  .stats-inner { gap: 1.5rem; }
+  .stats-inner { flex-wrap: wrap; justify-content: center; text-align: center; gap: 1.5rem; }
   .features-grid { grid-template-columns: 1fr; }
-  .pricing-container { grid-template-columns: 1fr; }
+  .pricing-container { grid-template-columns: 1fr; justify-items: center; }
   .steps-row { flex-direction: column; align-items: center; }
   .step-arrow { transform: rotate(90deg); padding: 0; }
   .step-card { max-width: 100%; width: 100%; }

@@ -9,6 +9,85 @@
   <meta property="og:description" content="Prepare smarter. Debrief better. Progress faster. The app built for UK PPL student pilots.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://getflightpath.app">
+  <meta property="og:image" content="https://getflightpath.app/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flight Path — UK PPL Training Companion">
+  <meta name="twitter:description" content="Prepare smarter. Debrief better. Progress faster. The app built for UK PPL student pilots.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="PPL training app, UK pilot training, CAA syllabus, student pilot, flight training, PPL exam, aviation app, pilot logbook, flight debrief, CAP 1298">
+  <link rel="canonical" href="https://getflightpath.app">
+
+  <!-- Structured data for AI and search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Flight Path",
+    "operatingSystem": "iOS",
+    "applicationCategory": "EducationApplication",
+    "description": "The structured companion app for UK PPL student pilots. Covers all 19 CAA exercises with briefs, quizzes, flashcards, AI-powered debriefs, and progress tracking.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "name": "Free"
+      },
+      {
+        "@type": "Offer",
+        "price": "24.99",
+        "priceCurrency": "GBP",
+        "name": "Pro — Lifetime"
+      }
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Edward Radford"
+    },
+    "url": "https://getflightpath.app",
+    "inLanguage": "en-GB",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "description": "UK Private Pilot Licence (PPL) student pilots"
+    }
+  }
+  </script>
+
+  <!-- FAQ structured data for rich snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Flight Path?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Flight Path is a companion app for UK PPL(A) student pilots. It guides you through all 19 official CAA exercises with structured preparation, quizzes, AI-powered debriefs, and progress tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Flight Path cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Flight Path is free to start with 5 exercises. The Pro version unlocks all 19 CAA exercises for a one-time payment of £24.99 — no subscription."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What CAA exercises does Flight Path cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Flight Path covers all 19 exercises in the CAP 1298 syllabus, including sub-exercises for Slow Flight, Stalling, and Navigation."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,8 +102,8 @@
       Flight<span>Path</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#features">Features</a></li>
       <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#features">Features</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li class="nav-divider" aria-hidden="true"></li>
       <li><a href="support.html">Support</a></li>
@@ -36,6 +115,9 @@
         Download
       </a>
     </div>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('nav-open')">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- ── HERO ────────────────────────────────────────────── -->
@@ -324,7 +406,7 @@
         <a href="contact.html">Contact</a>
       </div>
     </div>
-    <p class="footer-copy">© 2026 Ed Ward. All rights reserved. Flight Path is not affiliated with the UK Civil Aviation Authority.</p>
+    <p class="footer-copy">© 2026 Edward Radford. All rights reserved. Flight Path is not affiliated with the UK Civil Aviation Authority.</p>
   </footer>
 
 </body>
