@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Flight Path</title>
+  <meta name="description" content="Privacy Policy for the Flight Path app — how we collect, use and protect your data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">&#9992; Flight <span>Path</span></a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#pricing">Pricing</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-primary">Download</a>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+
+    <h1>Privacy Policy</h1>
+    <span class="last-updated">Last updated: March 2026</span>
+
+    <p>Flight Path ("we", "us", "our") is operated by Ed Ward, England and Wales. This policy explains what personal data we collect, why we collect it, how it is used, and your rights under UK GDPR and the Data Protection Act 2018.</p>
+
+    <h2>1. Data We Collect</h2>
+    <ul>
+      <li><strong>Account information:</strong> name, email address, and password (hashed by Firebase Auth).</li>
+      <li><strong>Profile information:</strong> aircraft type, total hours flown, current exercise number.</li>
+      <li><strong>Lesson data:</strong> scheduled and completed flight lesson records, including ratings, quiz scores, instructor notes, personal reflections, weather data, and AI-generated debrief content.</li>
+      <li><strong>Exercise progress:</strong> per-exercise status, attempt count, best rating, and spaced-repetition due dates.</li>
+      <li><strong>Device token:</strong> Firebase Cloud Messaging (FCM) token for push notifications.</li>
+      <li><strong>Usage data:</strong> Firebase Analytics events (e.g. screen views, quiz completions). Analytics data is aggregated and not linked to individual users beyond your Firebase UID.</li>
+      <li><strong>Crash reports:</strong> anonymised crash data via Firebase Crashlytics.</li>
+    </ul>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+      <li><strong>To provide the app</strong> — storing and displaying your lesson history, progress, and exercise content.</li>
+      <li><strong>AI coaching</strong> — your lesson data (ratings, notes, quiz score) is sent to the Anthropic Claude API to generate personalised post-lesson feedback. This data is not used to train Anthropic's models.</li>
+      <li><strong>Push notifications</strong> — lesson reminders, spaced-repetition prompts, and inactivity nudges sent via FCM.</li>
+      <li><strong>Subscription management</strong> — your Firebase UID is shared with RevenueCat to verify purchase status.</li>
+      <li><strong>Improving the app</strong> — aggregated, anonymised analytics and crash data help us identify and fix bugs.</li>
+    </ul>
+
+    <h2>3. Legal Basis for Processing</h2>
+    <p>We process your data on the basis of:</p>
+    <ul>
+      <li><strong>Contract</strong> — to deliver the services you have signed up for.</li>
+      <li><strong>Legitimate interests</strong> — app analytics and crash reporting to maintain a reliable service.</li>
+      <li><strong>Consent</strong> — push notifications (you may withdraw consent at any time via device settings or Settings &rarr; Notifications in the app).</li>
+    </ul>
+
+    <h2>4. Third-Party Processors</h2>
+    <ul>
+      <li><strong>Google Firebase</strong> (Firebase Auth, Firestore, FCM, Analytics, Crashlytics) — Google LLC, USA. Covered by Standard Contractual Clauses.</li>
+      <li><strong>RevenueCat</strong> — RevenueCat Inc., USA. Processes your Firebase UID and purchase events only.</li>
+      <li><strong>Anthropic (Claude API)</strong> — Anthropic PBC, USA. Receives lesson data for AI debrief generation. Data is not retained for model training.</li>
+      <li><strong>OpenWeatherMap</strong> — OpenWeather Ltd, UK. Receives GPS or manually entered airfield ICAO codes for weather briefings.</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>Your data is retained for as long as your account is active. If you delete your account (Settings &rarr; Delete Account), all your data — including lessons, exercise progress, share links, messages, and your user profile — is permanently deleted from our systems within 30 days. Firebase Auth credentials are deleted immediately.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>Under UK GDPR you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+      <li><strong>Rectification</strong> — correct inaccurate data via Settings &rarr; Edit Profile.</li>
+      <li><strong>Erasure</strong> — delete your account and all associated data via Settings &rarr; Delete Account.</li>
+      <li><strong>Portability</strong> — export your lesson data as a PDF via Progress &rarr; Share Progress.</li>
+      <li><strong>Restriction</strong> — request that we restrict processing of your data while a dispute is resolved.</li>
+      <li><strong>Object</strong> — object to processing based on legitimate interests.</li>
+    </ul>
+    <p>To exercise any right not available directly in the app, contact us at <a href="mailto:privacy@getflightpath.app">privacy@getflightpath.app</a>. We will respond within 30 days.</p>
+
+    <h2>7. Local Storage</h2>
+    <p>The app stores exercise content, offline lesson drafts, and notification preferences locally on your device using Hive and SharedPreferences. This data never leaves your device except as part of normal Firestore sync.</p>
+
+    <h2>8. Children</h2>
+    <p>Flight Path is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact <a href="mailto:privacy@getflightpath.app">privacy@getflightpath.app</a>.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Material changes will be notified via the app's "What's New" section. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Data controller: Ed Ward<br>
+      Email: <a href="mailto:privacy@getflightpath.app">privacy@getflightpath.app</a>
+    </p>
+    <p>If you have concerns about how we handle your data, you may also lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>.</p>
+
+    <h2>11. Governing Law</h2>
+    <p>This policy is governed by the laws of England and Wales.</p>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo">&#9992; Flight Path</a>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+    <p class="footer-copy">&#169; 2026 Ed Ward. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
