@@ -4,146 +4,324 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flight Path — UK PPL Training Companion App</title>
-  <meta name="description" content="The structured companion app for UK student pilots. Prepare smarter, debrief better, and progress faster through your PPL training.">
+  <meta name="description" content="The structured companion app for UK PPL student pilots. Prepare smarter, debrief better, and progress faster through your CAA training.">
   <meta property="og:title" content="Flight Path — UK PPL Training Companion">
   <meta property="og:description" content="Prepare smarter. Debrief better. Progress faster. The app built for UK PPL student pilots.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://getflightpath.app">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ── NAV ─────────────────────────────────────────────── -->
   <nav>
-    <a href="/" class="nav-logo">&#9992; Flight <span>Path</span></a>
+    <a href="/" class="nav-logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 16L12 3L3 16L12 13.5L21 16Z" fill="currentColor" opacity="0.9"/><path d="M12 13.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Flight<span>Path</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="support.html">Support</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="#" class="btn btn-primary">Download</a>
+      <a href="#" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8l6 4-4 2z" fill="currentColor"/></svg>
+        Download
+      </a>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ── HERO ────────────────────────────────────────────── -->
   <section class="hero">
-    <div class="hero-badge">&#9992; For UK PPL Student Pilots</div>
-    <h1>Your PPL training<br><em>companion.</em></h1>
-    <p>Prepare smarter. Debrief better. Progress faster. The structured companion app for UK student pilots working through the CAA syllabus.</p>
-    <div class="hero-actions">
-      <a href="#" class="app-store-badge" aria-label="Download on the App Store">
-        <img
-          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-          alt="Download on the App Store"
-        >
-      </a>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          For UK PPL Student Pilots
+        </div>
+        <h1>Your PPL training<br><em>companion.</em></h1>
+        <p>Prepare smarter. Debrief better. Progress faster.<br>The structured app built for the official CAA syllabus.</p>
+        <div class="hero-actions">
+          <a href="#" class="app-store-badge" aria-label="Download on the App Store">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+          </a>
+          <a href="#features" class="btn btn-ghost">
+            See features
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-phone">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-ui">
+              <div class="phone-header">
+                <span class="phone-greeting">Good morning, Ed ✈</span>
+                <div class="phone-avatar"></div>
+              </div>
+              <div class="phone-card orange">
+                <div class="phone-card-label">TODAY'S EXERCISE</div>
+                <div class="phone-card-title">Exercise 5</div>
+                <div class="phone-card-sub">Taxiing</div>
+                <div class="phone-pill">Prepare →</div>
+              </div>
+              <div class="phone-steps">
+                <div class="phone-step done">
+                  <div class="step-icon">✓</div>
+                  <span>Brief</span>
+                </div>
+                <div class="phone-step done">
+                  <div class="step-icon">✓</div>
+                  <span>Flashcards</span>
+                </div>
+                <div class="phone-step active">
+                  <div class="step-icon active">4</div>
+                  <span>Quiz</span>
+                </div>
+                <div class="phone-step">
+                  <div class="step-icon dim">5</div>
+                  <span>Weather</span>
+                </div>
+              </div>
+              <div class="phone-card dark">
+                <div class="phone-card-label">HOURS FLOWN</div>
+                <div class="phone-hours">12.5 <span>hrs</span></div>
+                <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:45%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-glow"></div>
+      </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
+  <!-- ── STATS BAR ───────────────────────────────────────── -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-number">19</span>
+        <span class="stat-label">CAA exercises covered</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">CAP 1298</span>
+        <span class="stat-label">Official syllabus</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">75%</span>
+        <span class="stat-label">CAA quiz standard</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">£24.99</span>
+        <span class="stat-label">One-time. No subscription.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── HOW IT WORKS ────────────────────────────────────── -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-header">
+      <span class="section-label">The cycle</span>
+      <h2>Structured training, every lesson</h2>
+      <p>Flight Path guides you through each exercise with a proven prepare → fly → debrief cycle.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Schedule</h3>
+        <p>Book your lesson and let Flight Path build your prep timeline automatically.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Prepare</h3>
+        <p>Brief, video, flashcards, quiz and live weather — your full pre-flight checklist.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card highlighted">
+        <div class="step-number">03</div>
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Fly</h3>
+        <p>Show up to every lesson confident, prepared, and ready to make the most of every hour.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <div class="step-icon-wrap">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636-.707.707M21 12h-1M4 12H3m3.343-5.657-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Debrief</h3>
+        <p>Rate your performance, add notes, and get AI-powered feedback to sharpen your next lesson.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ────────────────────────────────────────── -->
   <section class="features" id="features">
     <div class="section-header">
       <span class="section-label">Everything you need</span>
       <h2>Built for the way pilots learn</h2>
-      <p>Every feature is designed around the official CAP 1298 syllabus — before, during, and after each lesson.</p>
+      <p>Every feature designed around the official CAP 1298 syllabus — before, during, and after each lesson.</p>
     </div>
     <div class="features-grid">
 
-      <div class="feature-card">
-        <div class="feature-icon">&#128218;</div>
+      <div class="feature-card large">
+        <div class="feature-icon-wrap orange">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>Prepare Hub</h3>
-        <p>Brief, video, flashcards, quiz, and live weather for every exercise — everything you need before you fly.</p>
+        <p>A full pre-flight briefing for every exercise — read the brief, watch a video, revise flashcards, pass the quiz, and check live weather at your airfield. All in one place.</p>
+        <div class="feature-pills">
+          <span class="pill">Brief</span>
+          <span class="pill">Video</span>
+          <span class="pill">Flashcards</span>
+          <span class="pill">Quiz</span>
+          <span class="pill">Weather</span>
+        </div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">&#129504;</div>
+      <div class="feature-card large">
+        <div class="feature-icon-wrap purple">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>AI-Powered Debrief</h3>
-        <p>Rate your lesson and get instant AI coaching on what went well, what to improve, and what to focus on next time.</p>
+        <p>Rate your lesson, add your personal reflection and instructor notes — then get instant AI coaching. What went well, what to improve, and exactly what to focus on next time.</p>
+        <div class="feature-pills">
+          <span class="pill">Performance rating</span>
+          <span class="pill">AI feedback</span>
+          <span class="pill">Instructor notes</span>
+        </div>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">&#128172;</div>
+        <div class="feature-icon-wrap blue">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>Ask AI Instructor</h3>
-        <p>Get clear, instant answers to your PPL theory questions — available 24/7, however you're studying.</p>
+        <p>24/7 answers to your PPL theory questions, grounded in UK CAA regulations. From METARs to VOR tracking — ask anything.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">&#128202;</div>
+        <div class="feature-icon-wrap green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18M7 16l4-4 4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>Progress Tracking</h3>
-        <p>Full logbook, hours breakdown, weak area analysis, and shareable progress reports — all in one place.</p>
+        <p>Full logbook, hours breakdown, weak area analysis, and shareable progress reports — everything in one place.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">&#9992;</div>
+        <div class="feature-icon-wrap orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>All 19 CAA Exercises</h3>
-        <p>Complete coverage of the CAP 1298 syllabus, including sub-exercises for Stalling, Navigation, and more.</p>
+        <p>Complete coverage of CAP 1298 — including sub-exercises for Slow Flight, Stalling, and Navigation.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">&#128336;</div>
+        <div class="feature-icon-wrap amber">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <h3>Spaced Repetition</h3>
-        <p>Smart reminders prompt you to revisit exercises at exactly the right time, so knowledge sticks.</p>
+        <p>Smart reminders at 1, 3, 7 and 14 days prompt you to revisit exercises at exactly the right time.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- PRICING -->
-  <section id="pricing">
+  <!-- ── PRICING ─────────────────────────────────────────── -->
+  <section id="pricing" class="pricing-section">
     <div class="section-header">
       <span class="section-label">Pricing</span>
-      <h2>Free to start. Pro for £24.99.</h2>
-      <p>Try Flight Path for free before unlocking the full syllabus with a one-time payment.</p>
+      <h2>Free to start.<br>Pro for £24.99.</h2>
+      <p>Try Flight Path for free, then unlock the full syllabus with a single one-time payment — no subscription, ever.</p>
     </div>
     <div class="pricing-container">
 
       <div class="pricing-card">
-        <div class="pricing-tag">Free</div>
-        <h3>Free Tier</h3>
-        <div class="pricing-price">£0 <span></span></div>
-        <p class="pricing-desc">Access your current exercise and the two on each side — 5 exercises total — with no payment required.</p>
+        <div class="pricing-tag free-tag">Free</div>
+        <div class="pricing-price">£0</div>
+        <p class="pricing-desc">Your current exercise and the two on each side — 5 exercises total, with no payment required.</p>
         <ul class="pricing-features">
-          <li>5 exercises (current &#177;2)</li>
-          <li>Prepare Hub for available exercises</li>
-          <li>AI Debrief for available exercises</li>
-          <li>Progress tracking &amp; logbook</li>
-          <li>Ask AI Instructor</li>
-          <li class="muted">All 19 CAA exercises</li>
-          <li class="muted">Full syllabus access</li>
+          <li class="check">5 exercises (current ±2)</li>
+          <li class="check">Prepare Hub for free exercises</li>
+          <li class="check">AI Debrief for free exercises</li>
+          <li class="check">Progress tracking &amp; logbook</li>
+          <li class="check">Ask AI Instructor</li>
+          <li class="cross">All 19 CAA exercises</li>
+          <li class="cross">Full syllabus access</li>
         </ul>
+        <a href="#" class="btn btn-outline btn-full">Download free</a>
       </div>
 
       <div class="pricing-card featured">
-        <div class="pricing-tag">Pro</div>
-        <h3>Pro — Lifetime</h3>
-        <div class="pricing-price">£24.99 <span>one-time</span></div>
-        <p class="pricing-desc">Unlock all 19 exercises for the full CAP 1298 syllabus. Pay once, own it forever — no subscription.</p>
+        <div class="pricing-shine"></div>
+        <div class="pricing-tag pro-tag">Pro</div>
+        <div class="pricing-price">£24.99 <span class="pricing-once">one-time</span></div>
+        <p class="pricing-desc">Unlock all 19 exercises for the full CAP 1298 syllabus. Pay once, own it forever.</p>
         <ul class="pricing-features">
-          <li>All 19 CAA exercises</li>
-          <li>Full Prepare Hub access</li>
-          <li>AI Debrief for all exercises</li>
-          <li>Progress tracking &amp; logbook</li>
-          <li>Ask AI Instructor</li>
-          <li>Shareable progress reports</li>
-          <li>All future content updates</li>
+          <li class="check">All 19 CAA exercises</li>
+          <li class="check">Full Prepare Hub access</li>
+          <li class="check">AI Debrief for all exercises</li>
+          <li class="check">Progress tracking &amp; logbook</li>
+          <li class="check">Ask AI Instructor</li>
+          <li class="check">Shareable progress reports</li>
+          <li class="check">All future content updates</li>
         </ul>
+        <a href="#" class="btn btn-primary btn-full">Get Pro — £24.99</a>
+        <p class="pricing-small">Available via Apple App Store · No subscription</p>
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="cta-glow"></div>
+    <div class="cta-inner">
+      <div class="hero-badge" style="margin: 0 auto 1.5rem;">
+        <span class="badge-dot"></span>
+        Available on iOS
+      </div>
+      <h2>Ready to take your training further?</h2>
+      <p>Join student pilots who prepare smarter, debrief better, and progress faster with Flight Path.</p>
+      <a href="#" class="app-store-badge" aria-label="Download on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
   <footer>
     <div class="footer-inner">
-      <a href="/" class="footer-logo">&#9992; Flight Path</a>
+      <a href="/" class="footer-logo">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 16L12 3L3 16L12 13.5L21 16Z" fill="currentColor" opacity="0.9"/><path d="M12 13.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Flight Path
+      </a>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms &amp; Conditions</a>
         <a href="support.html">Support</a>
       </div>
     </div>
-    <p class="footer-copy">&#169; 2026 Ed Ward. All rights reserved.</p>
+    <p class="footer-copy">© 2026 Ed Ward. All rights reserved. Flight Path is not affiliated with the UK Civil Aviation Authority.</p>
   </footer>
 
 </body>
