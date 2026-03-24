@@ -80,7 +80,8 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 1.75rem;
   list-style: none;
 }
 .nav-links a {
@@ -91,6 +92,12 @@ nav {
   text-decoration: none;
 }
 .nav-links a:hover { color: var(--text-1); text-decoration: none; }
+.nav-links .nav-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  flex-shrink: 0;
+}
 
 /* ─── BUTTONS ───────────────────────────────────────────── */
 
